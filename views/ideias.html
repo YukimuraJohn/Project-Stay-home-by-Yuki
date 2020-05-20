@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Ideias - Casa Criativa</title>
+    
+   {% include "head_content.html" %} 
+</head>
+<body id="page-ideas">
+    
+    <div id="container">
+        <header>
+            <a href="/">
+                <img class="Casa" src="/john_casa.png" alt="Imagem da LogoMarca">
+            </a>
+            <nav>
+                <li><a href="/">Inicio</a></li>
+                <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>Em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideas">
+               {% include "TD_ideas.html" %}
+            </section> 
+        </main> 
+        <footer>
+            Com ❤ <a href="https://www.facebook.com/john.damascenorito.yuuki" target="_blank">YukimuraJohn</a>
+        </footer>
+    </div>
+   
+   <!-- Modal  --> 
+   {% include "modal.html" %} 
+
+
+ <script src="/Script.js"></script>
+</body>
+</html>
